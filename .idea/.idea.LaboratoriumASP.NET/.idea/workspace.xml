@@ -9,12 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2c1e6cc-736e-49f6-8ed1-28de950c5266" name="Changes" comment="Init">
-      <change afterPath="$PROJECT_DIR$/WebApp/Views/Home/About.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/Views/Home/Calculator.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Shared/_Layout.cshtml" afterDir="false" />
+    <list default="true" id="f2c1e6cc-736e-49f6-8ed1-28de950c5266" name="Changes" comment="Zadanie 1">
+      <change beforePath="$PROJECT_DIR$/WebApp/Views/Home/Calculator.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Home/Calculator.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +37,9 @@
     "accountId": "33e800ec-51d1-48d7-b81e-ad0d70f52879"
   }
 }]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/Users/oleh.protsun1/RiderProjects/LaboratoriumASP.NET/WebApp/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
@@ -128,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728464902050</updated>
-      <workItem from="1728464903443" duration="922000" />
+      <workItem from="1728464903443" duration="1230000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -138,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728464947515</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Zadanie 1">
+      <option name="closed" value="true" />
+      <created>1728465877966</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728465877966</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +156,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="Zadanie 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 1" />
   </component>
 </project>
