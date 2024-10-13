@@ -24,6 +24,41 @@ public class HomeController : Controller
         return View();
     }
     
+    //Zadanie Domowe
+    public IActionResult Age(DateTime? birthDate)
+    {
+        //.../?birthDate=YYYY-MM-DD
+        if (birthDate == null)
+        {
+            ViewBag.ErrorMessage = "Please select a date";
+            return View("AgeError");
+        }
+        var age = CalculateAge(birthDate);
+        ViewBag.AgeYears = age.Value.Years;
+        ViewBag.AgeMonths = age.Value.Months;
+        ViewBag.AgeDays = age.Value.Days;
+        return View("Age");
+    }
+
+    private (int Years, int Months, int Days)? CalculateAge(DateTime? birthDate)
+    {
+        var years = DateTime.Today.Year - birthDate.Value.Year;
+        var months = DateTime.Today.Month - birthDate.Value.Month;
+        var days = DateTime.Today.Day - birthDate.Value.Day;
+        if (days<0)
+        {
+            months--;
+            days += DateTime.DaysInMonth(DateTime.Today.Year, DateTime.Today.Month);
+        }
+
+        if (months < 0)
+        {
+            years--;
+            days += DateTime.DaysInMonth(DateTime.Today.Year, DateTime.Today.Month);
+        }
+        return (years, months, days);
+    }
+    
     //Zadanie 1.
     public IActionResult Calculator(Operator? op, double? x, double? y)
     {
