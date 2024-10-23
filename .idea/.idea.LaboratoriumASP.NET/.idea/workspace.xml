@@ -10,20 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2c1e6cc-736e-49f6-8ed1-28de950c5266" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebApp/Controllers/ProductController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/Views/Home/Create.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/Views/Product/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Controllers/HomeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Controllers/ContactController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Models/ContactModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Views/Contact/Add.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Views/Contact/Details.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Views/Contact/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="1" />
+    <option name="OUTPUT_DIRECTORY" value="https://github.com/OlehProtsun/LaboratoriumASP.NET.git" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lab1" />
+        <entry key="$PROJECT_DIR$" value="lab2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,27 +64,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.WebApp: https.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lab2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.WebApp: https.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "lab3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;D:\\Users\\oleh.protsun1\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;D:\\Users\\oleh.protsun1\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;D:\\Users\\oleh.protsun1\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "D:\\Users\\oleh.protsun1\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "D:\\Users\\oleh.protsun1\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "D:\\Users\\oleh.protsun1\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebApp: https">
     <configuration name="WebApp: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebApp/WebApp.csproj" />
@@ -134,6 +141,10 @@
       <option name="presentableId" value="Default" />
       <updated>1728464902050</updated>
       <workItem from="1728464903443" duration="3691000" />
+      <workItem from="1729673354292" duration="230000" />
+      <workItem from="1729673611602" duration="193000" />
+      <workItem from="1729673821007" duration="37000" />
+      <workItem from="1729674029554" duration="4079000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -159,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728466265096</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test">
+      <option name="closed" value="true" />
+      <created>1729673444704</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729673444704</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +191,7 @@
     <MESSAGE value="Init" />
     <MESSAGE value="Zadanie 1" />
     <MESSAGE value="Zadanie 1(literuwka)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 1(literuwka)" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
