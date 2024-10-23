@@ -1,0 +1,52 @@
+@model WebApp.Controllers.Product
+@{
+    ViewBag.Title = "ProductForm";
+    Layout = "_Layout";
+}
+
+<h2>@ViewBag.Title</h2>
+<form asp-action="Index" asp-controller="Product" method="post">
+    <div asp-validation-summary="All"></div>
+    
+    <div>
+        <label asp-for="Nazwa">Nazwa</label>
+        <div>
+            <span asp-validation-for="Nazwa" class="text-danger"></span>
+        </div>
+        <input class="form-control" type="text" asp-for="Nazwa"/>
+    </div>
+
+    <div>
+        <label asp-for="Cena">Cena</label>
+        <div>
+            <span asp-validation-for="Cena" class="text-danger"></span>
+        </div>
+        <input class="form-control" type="number" asp-for="Cena" step="0.01" min="0"/>
+    </div>
+
+    <div>
+        <label asp-for="Producent">Producent</label>
+        <div>
+            <span asp-validation-for="Producent" class="text-danger"></span>
+        </div>
+        <input class="form-control" type="text" asp-for="Producent"/>
+    </div>
+
+    <div>
+        <label asp-for="DataProdukcji">Data Produkcji</label>
+        <div>
+            <span asp-validation-for="DataProdukcji" class="text-danger"></span>
+        </div>
+        <input class="form-control" type="date" asp-for="DataProdukcji"/>
+    </div>
+
+    <div>
+        <label asp-for="Opis">Opis</label>
+        <div>
+            <span asp-validation-for="Opis" class="text-danger"></span>
+        </div>
+        <textarea class="form-control" asp-for="Opis"></textarea>
+    </div>
+
+    <button type="submit">Zapisz</button>
+</form>

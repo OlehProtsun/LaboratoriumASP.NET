@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
@@ -12,6 +13,26 @@ public class HomeController : Controller
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public ViewResult Create(Product product)
+    {
+        if (ModelState.IsValid)
+        {
+            //kod wykonywany gdy dane są poprawne
+            return View();
+        }
+        else
+        {
+            return View(); // ponowne wyświetlenie formularza z informacjami o błędach
+        }
     }
 
     public IActionResult Index()
@@ -86,4 +107,27 @@ public enum Operator
     Add, Sub, Mul, Div 
 }
 
-// Zdanie domowe: napisz metode Age, ktora przyjmuje paratre z data urodzin i wyswietla wiek w latach miesiacach i dniach. I send link do repoztorium d E.Wsei
+// Lab 2 zadanie
+
+public class Product
+{
+    [HiddenInput]
+    public int Id { get; set; }
+    
+    [Required(ErrorMessage = "Proszę podać nazwe!")]
+    public string Nazwa { get; set; }
+    
+    [Required(ErrorMessage = "Proszę podać cenę!")]
+    [Range(0.01, double.MaxValue, ErrorMessage = "Cena musi być większa od zera.")]
+    public decimal Cena { get; set; }
+    
+    [Required(ErrorMessage = "Proszę podać producenta!")]
+    public string Producent { get; set; }
+
+    [Required(ErrorMessage = "Proszę podać datę produkcji!")]
+    [DataType(DataType.Date)]
+    public DateTime DataProdukcji { get; set; }
+    
+    public string Opis { get; set; }
+}
+
