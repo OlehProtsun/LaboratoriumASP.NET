@@ -5,49 +5,50 @@
     Layout = "_Layout";
 }
 
-<h2>Dodaj kontakt</h2>
-<form asp-action="Add" method="post">
+<h2>Edytuj kontakt</h2>
+<form asp-action="Edit" method="post">
+    <input asp-for="Id"/>
+    
     <div class="mb-3">
-        <label class="form-label" asp-for="FirstName"></label>
+        <lable class="form-label" asp-for="FirstName">FirstName</lable>
         <input class="form-control" asp-for="FirstName"/>
         <span class="text-danger" asp-validation-for="FirstName"></span>
     </div>
-    
+
     <div class="mb-3">
-        <label class="form-label" asp-for="LastName"></label>
+        <lable class="form-label" asp-for="LastName">LastName</lable>
         <input class="form-control" asp-for="LastName"/>
         <span class="text-danger" asp-validation-for="LastName"></span>
     </div>
 
     <div class="mb-3">
-        <label class="form-label" asp-for="Email"></label>
+        <lable class="form-label" asp-for="Email">Email</lable>
         <input class="form-control" asp-for="Email"/>
         <span class="text-danger" asp-validation-for="Email"></span>
     </div>
 
     <div class="mb-3">
-        <label class="form-label" asp-for="PhoneNumber"></label>
+        <lable class="form-label" asp-for="PhoneNumber">PhoneNumber</lable>
         <input class="form-control" asp-for="PhoneNumber"/>
         <span class="text-danger" asp-validation-for="PhoneNumber"></span>
     </div>
 
     <div class="mb-3">
-        <label class="form-label" asp-for="BirthDate"></label>
+        <lable class="form-label" asp-for="BirthDate">BirthDate</lable>
         <input class="form-control" asp-for="BirthDate"/>
         <span class="text-danger" asp-validation-for="BirthDate"></span>
     </div>
 
     <div class="mb-3">
-        <label class="form-label" asp-for="Category"></label>
+        <lable class="form-label" asp-for="Category">Category</lable>
         <select
             class="form-control"
             asp-for="Category"
-            asp-items="@Html.GetEnumSelectList<Category>()"
-            >
+            asp-items="@Html.GetEnumSelectList<Category>()">
         </select>
         <span class="text-danger" asp-validation-for="Category"></span>
     </div>
-    
-    <button type="submit" class="btn btn-outline-primary">Dodaj</button>
+
+    <button type="submit" class="btn btn-outline-primary">Zapisz</button>
     <button type="reset" class="btn btn-outline-danger">Reset</button>
 </form>

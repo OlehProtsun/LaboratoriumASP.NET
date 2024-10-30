@@ -5,9 +5,30 @@
     Layout = "_Layout";
 }
 
-<h2>Szczegóły kontaktu</h2>
-<h3>@Model.FirstName @Model.LastName</h3>
-<p>Email</p>
-<h4>@Model.Email</h4>
-<p>Numer telefonu</p>
-<h4>@Model.PhoneNumber</h4>
+<div class="card p-4 shadow-sm mb-4">
+    <h2 class="text-primary">Szczegóły kontaktu</h2>
+    <div class="card-body">
+        <h3 class="card-title mb-4">@Model.FirstName @Model.LastName</h3>
+
+        <div class="mb-3">
+            <p class="fw-bold text-muted mb-1">Email:</p>
+            <h4 class="text-dark">@Model.Email</h4>
+        </div>
+
+        <div class="mb-3">
+            <p class="fw-bold text-muted mb-1">Numer telefonu:</p>
+            <h4 class="text-dark">@Model.PhoneNumber</h4>
+        </div>
+
+        <div class="mt-4">
+            <p class="fw-bold text-muted mb-1">Kategoria:</p>
+            <h4 class="text-info">@Model.Category</h4>
+        </div>
+        
+        <div class="mt-4">
+            <a class="btn btn-outline-primary" asp-action="Index" asp-controller="Contact">Dodaj</a>
+        </div>
+    </div>
+</div>
+
+

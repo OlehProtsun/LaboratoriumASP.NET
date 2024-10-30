@@ -1,3 +1,5 @@
+using WebApp.Models.Services;
+
 namespace WebApp;
 
 public class Program
@@ -8,7 +10,9 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddControllersWithViews();
-
+        // skojarzenie MamoryContactService z interfejsem, tworzenie jednej instancji
+        builder.Services.AddSingleton<IContactService, MemoryContactService>();
+        
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
