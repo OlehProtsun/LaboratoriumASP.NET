@@ -17,15 +17,23 @@
             <th>
                 @Html.DisplayNameFor(d => d[0].FirstName)
             </th>
+            
             <th>
                 @Html.DisplayNameFor(d => d[0].LastName)
             </th>
+            
             <th>
                 @Html.DisplayNameFor(d => d[0].Category)
             </th>
+            
+            <th>
+                @Html.DisplayNameFor(d => d[0].Organization)
+            </th>
+            
             <th class="text-end">
                 Operacje
             </th>
+            
         </tr>
         </thead>
         <tdoby>
@@ -40,6 +48,9 @@
                     </td>
                     <td>
                         @entry.Category.GetDisplayName()
+                    </td>
+                    <td>
+                        @(entry.Organization?.Name??"Brak organizacji")
                     </td>
                     <td>
                         <div class="float-end">

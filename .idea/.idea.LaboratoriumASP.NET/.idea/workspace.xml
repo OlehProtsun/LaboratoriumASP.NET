@@ -10,12 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2c1e6cc-736e-49f6-8ed1-28de950c5266" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebApp/Models/AppDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/Models/ContactEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/Models/ContactMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/Models/Services/EFContactService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Models/OrganizationEntity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Controllers/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Controllers/ContactController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/ContactEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/ContactEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/ContactMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/ContactMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/ContactModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/ContactModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/Services/EFContactService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/Services/EFContactService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/Services/IContactService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/Services/IContactService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/Services/MemoryContactService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/Services/MemoryContactService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Views/Contact/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Contact/Add.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Views/Contact/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Contact/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/WebApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/WebApp.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lab4(Zdalne)" />
+        <entry key="$PROJECT_DIR$" value="lab5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,7 +67,7 @@
   &quot;keyToString&quot;: {
     &quot;.NET Launch Settings Profile.WebApp: https.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lab5&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab6&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -136,6 +142,7 @@
       <workItem from="1728464903443" duration="3691000" />
       <workItem from="1729524866920" duration="7944000" />
       <workItem from="1730890788751" duration="669000" />
+      <workItem from="1731492809500" duration="3618000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />

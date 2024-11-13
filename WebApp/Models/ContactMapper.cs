@@ -1,4 +1,5 @@
 using System.Security.Cryptography;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace WebApp.Models;
 
@@ -14,7 +15,9 @@ public class ContactMapper
             BirthDate = arg.BirthDate,
             Email = arg.Email,
             PhoneNumber = arg.PhoneNumber,
-            Category = arg.Category
+            Category = arg.Category,
+            Organization = arg.Organization,
+            OrganizationId = arg.OrganizationId
         };
     }
     
@@ -28,7 +31,9 @@ public class ContactMapper
             BirthDate = arg.BirthDate,
             Email = arg.Email,
             PhoneNumber = arg.PhoneNumber,
-            Category = arg.Category
+            Category = arg.Category,
+            Organization = arg.Organization,
+            OrganizationId = arg.OrganizationId
         };
     }
 }
