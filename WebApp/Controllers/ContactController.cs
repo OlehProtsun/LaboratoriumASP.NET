@@ -26,7 +26,7 @@ public class ContactController : Controller
     public IActionResult Add()
     {
         var model = new ContactModel();
-        model.Organizations = _contactService.GetAllOrgamizations()
+        model.Organizations = _contactService.GetAllOrganizations()
             .Select(e => new SelectListItem()
             {
                 Value = e.Id.ToString(),
@@ -44,7 +44,7 @@ public class ContactController : Controller
         if (!ModelState.IsValid)
         {
             
-            model.Organizations = _contactService.GetAllOrgamizations()
+            model.Organizations = _contactService.GetAllOrganizations()
                 .Select(e => new SelectListItem()
                 {
                     Value = e.Id.ToString(),
@@ -70,7 +70,15 @@ public class ContactController : Controller
 
     public ActionResult Edit(int id)
     {
-        return View(_contactService.GetById(id));
+        var model = _contactService.GetById(id);
+        model.Organizations = _contactService.GetAllOrganizations()
+            .Select(e => new SelectListItem()
+            {
+                Value = e.Id.ToString(),
+                Text = e.Name,
+                Selected = e.Id == model.OrganizationId  // вибираємо організацію, яку зараз має контакт
+            }).ToList();
+        return View(model);
     }
 
     [HttpPost]
@@ -78,7 +86,15 @@ public class ContactController : Controller
     {
         if (!ModelState.IsValid)
         {
-            return View();
+            model.Organizations = _contactService.GetAllOrganizations()
+                .Select(e => new SelectListItem()
+                {
+                    Value = e.Id.ToString(),
+                    Text = e.Name,
+                    Selected = e.Id == model.OrganizationId  // вибираємо організацію, яку зараз має контакт
+                }).ToList();
+            return View(model);
+            
         }
         _contactService.Update(model);
         return RedirectToAction(nameof(Index));

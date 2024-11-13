@@ -73,7 +73,7 @@ public class MemoryContactService : IContactService
         return _contacts[id];
     }
 
-    public List<OrganizationEntity> GetAllOrgamizations()
+    public List<OrganizationEntity> GetAllOrganizations()
     {
         throw new NotImplementedException();
     }
