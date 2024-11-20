@@ -1,8 +1,12 @@
+using System.Configuration;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.General;
 
 namespace WebApp.Models;
 
-public class AppDbContext : DbContext
+public class AppDbContext : IdentityDbContext<IdentityUser>
 {
     public DbSet<ContactEntity> Contacts { get; set; }
     public DbSet<OrganizationEntity> organizations { get; set; }
@@ -23,6 +27,75 @@ public class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
+        var ADMIN_ID = Guid.NewGuid().ToString();
+        var ADMIN_ROLE_ID = Guid.NewGuid().ToString();
+        var USER_ID = Guid.NewGuid().ToString();
+        var USER_ROLE_ID = Guid.NewGuid().ToString();
+
+        
+        modelBuilder.Entity<IdentityRole>()
+            .HasData(
+                new IdentityRole()
+                {
+                    Id = ADMIN_ROLE_ID,
+                    Name = "admin",
+                    NormalizedName = "admin".ToUpper(),
+                    ConcurrencyStamp = ADMIN_ROLE_ID
+                },
+                new IdentityRole()
+                {
+                    Id = USER_ROLE_ID,
+                    Name = "user",
+                    NormalizedName = "user".ToUpper(),
+                    ConcurrencyStamp = USER_ROLE_ID
+                }
+            );
+        var admin = new IdentityUser()
+        {
+            Id = ADMIN_ID,
+            UserName = "oleh",
+            NormalizedUserName = "oleh".ToUpper(),
+            Email = "wsei@wsei.edu.pl",
+            NormalizedEmail = "wsei@wsei.edu.pl".ToUpper(),
+            EmailConfirmed = true,
+            
+        };
+        var user = new IdentityUser()
+        {
+            Id = USER_ID,
+            UserName = "olehuser",
+            NormalizedUserName = "olehuser".ToUpper(),
+            Email = "wseiuser@wsei.edu.pl",
+            NormalizedEmail = "wseiuser@wsei.edu.pl".ToUpper(),
+            EmailConfirmed = true,
+            
+        };
+        
+        PasswordHasher<IdentityUser> hasher = new PasswordHasher<IdentityUser>();
+        admin.PasswordHash = hasher.HashPassword(admin, "123!");
+        user.PasswordHash = hasher.HashPassword(user, "123456!");
+        modelBuilder.Entity<IdentityUser>()
+            .HasData(admin,user);
+        modelBuilder.Entity<IdentityUserRole<string>>()
+            .HasData(
+                new IdentityUserRole<string>()
+                {
+                    RoleId = ADMIN_ROLE_ID,
+                    UserId = ADMIN_ID
+                },
+                new IdentityUserRole<string>()
+                {
+                    RoleId = USER_ROLE_ID,
+                    UserId = USER_ID
+                },
+                new IdentityUserRole<string>()
+                {
+                    RoleId = USER_ROLE_ID,
+                    UserId = ADMIN_ID
+                }
+            );
+        
         modelBuilder.Entity<OrganizationEntity>()
             .ToTable("organizations")
             .HasData(

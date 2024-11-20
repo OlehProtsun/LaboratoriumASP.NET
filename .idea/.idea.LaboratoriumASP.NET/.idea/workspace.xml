@@ -12,7 +12,9 @@
     <list default="true" id="f2c1e6cc-736e-49f6-8ed1-28de950c5266" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/Controllers/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Controllers/ContactController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Views/Contact/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Contact/Edit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/WebApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/WebApp.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lab5" />
+        <entry key="$PROJECT_DIR$" value="lab6" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,8 +44,12 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/WebApp/Models/ContactModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/oleh.protsun1/RiderProjects/LaboratoriumASP.NET/WebApp/Views/Contact/Add.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApp/Models/Services/ContactEntity.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -56,10 +62,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.WebApp: http.executor": "Run",
     ".NET Launch Settings Profile.WebApp: https.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lab6",
+    "git-widget-placeholder": "lab7",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,7 +81,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebApp: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApp: https">
     <configuration name="WebApp: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebApp/WebApp.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -134,7 +139,6 @@
       <workItem from="1728464903443" duration="3691000" />
       <workItem from="1729524866920" duration="7944000" />
       <workItem from="1730890788751" duration="669000" />
-      <workItem from="1731492809500" duration="3746000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -176,15 +180,7 @@
       <option name="project" value="LOCAL" />
       <updated>1729525102156</updated>
     </task>
-    <task id="LOCAL-00006" summary="lab6())">
-      <option name="closed" value="true" />
-      <created>1731496643184</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1731496643184</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +195,6 @@
     <MESSAGE value="Zadanie 1(literuwka)" />
     <MESSAGE value="Zadanie domowe 1" />
     <MESSAGE value="Lab2_Zadanie" />
-    <MESSAGE value="lab6())" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab6())" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab2_Zadanie" />
   </component>
 </project>
