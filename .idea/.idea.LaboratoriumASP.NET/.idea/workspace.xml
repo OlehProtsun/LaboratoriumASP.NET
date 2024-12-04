@@ -10,12 +10,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2c1e6cc-736e-49f6-8ed1-28de950c5266" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/Email.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/Email.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/Index.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/ManageNavPages.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/_Layout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Controllers/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Controllers/ContactController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/WebApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/WebApp.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,17 +67,17 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/OlehProtsun/LaboratoriumASP.NET.git&quot;,
-    &quot;accountId&quot;: &quot;6e9c3f25-7672-4c4a-bcf7-f8d99877ceb0&quot;
+    &quot;accountId&quot;: &quot;dedf8103-ea91-4ca4-bd77-017c6182593e&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/WebApp/Models/ContactModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApp/Models/Services/ContactEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/oleh.protsun1/RiderProjects/LaboratoriumASP.NET/WebApp/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -60,27 +88,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.WebApp: https.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lab7",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.WebApp: https.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab7&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "D:\\Users\\oleh.protsun1\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "D:\\Users\\oleh.protsun1\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "D:\\Users\\oleh.protsun1\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;D:\\Users\\oleh.protsun1\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;D:\\Users\\oleh.protsun1\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;D:\\Users\\oleh.protsun1\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebApp: https">
     <configuration name="WebApp: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebApp/WebApp.csproj" />
@@ -139,6 +167,8 @@
       <workItem from="1728464903443" duration="3691000" />
       <workItem from="1729524866920" duration="7944000" />
       <workItem from="1730890788751" duration="669000" />
+      <workItem from="1732700748832" duration="353000" />
+      <workItem from="1733306346084" duration="999000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -180,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729525102156</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="lab7(done)">
+      <option name="closed" value="true" />
+      <created>1732101042356</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732101042356</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +233,7 @@
     <MESSAGE value="Zadanie 1(literuwka)" />
     <MESSAGE value="Zadanie domowe 1" />
     <MESSAGE value="Lab2_Zadanie" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab2_Zadanie" />
+    <MESSAGE value="lab7(done)" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab7(done)" />
   </component>
 </project>
