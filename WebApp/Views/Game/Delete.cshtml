@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="~/css/gameDelete.css" asp-append-version="true"/>
+@model WebApp.Models.Games.Game
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Delete this game?</h1>
+
+<div class="container text-center">
+    <h3>Are you sure you want to delete the following game?</h3>
+    <table class="table structured-table">
+        <thead>
+        <tr>
+            <th>Attribute</th>
+            <th>Details</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="highlight">Name</td>
+            <td>@Model.GameName</td>
+        </tr>
+        <tr>
+            <td class="highlight">Genre</td>
+            <td>@(Model.Genre?.GenreName ?? "No genre")</td>
+        </tr>
+        <tr>
+            <td class="highlight">Publishers</td>
+            <td>
+                @if (Model.GamePublishers.Any())
+                {
+                    @foreach (var gp in Model.GamePublishers)
+                    {
+                        <p><strong>Publisher:</strong> @gp.Publisher?.PublisherName</p>
+                        @if (gp.GamePlatforms.Any())
+                        {
+                            @foreach (var gpl in gp.GamePlatforms)
+                            {
+                                <p>
+                                    <strong>Platform:</strong> @gpl.Platform?.PlatformName <br />
+                                    <strong>Release Year:</strong> @gpl.ReleaseYear <br />
+                                    <strong>Region Sales:</strong>
+                                    @if (gpl.RegionSales.Any())
+                                    {
+                                        <ul>
+                                            @foreach (var rs in gpl.RegionSales)
+                                            {
+                                                <li>@rs.Region?.RegionName: @rs.NumSales</li>
+                                            }
+                                        </ul>
+                                    }
+                                    else
+                                    {
+                                        <span>No region sales</span>
+                                    }
+                                </p>
+                            }
+                        }
+                        else
+                        {
+                            <p>No platforms</p>
+                        }
+                    }
+                }
+                else
+                {
+                    <span>No publishers</span>
+                }
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-actions">
+            <input type="submit" value="Delete" class="btn btn-danger rounded-btn" />
+            <a asp-action="Index" class="btn btn-secondary rounded-btn">Back to List</a>
+        </div>
+    </form>
+</div>

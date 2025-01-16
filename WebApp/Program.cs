@@ -2,6 +2,7 @@ using WebApp.Models;
 using WebApp.Models.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using WebApp.Models.Games;
 
 namespace WebApp;
 
@@ -29,6 +30,10 @@ public class Program
         builder.Services.AddTransient<IContactService, EFContactService>();
         builder.Services.AddMemoryCache();
         builder.Services.AddSession();
+        
+        builder.Services.AddDbContext<GamesContext>(options =>
+            options.UseSqlite(builder.Configuration.GetConnectionString("VideoGamesDb")));
+        
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -52,7 +57,6 @@ public class Program
         app.MapControllerRoute(
             name: "default",
             pattern: "{controller=Home}/{action=Index}/{id?}");
-
         app.Run();
     }
 }

@@ -1,0 +1,56 @@
+@model WebApp.Models.Games.GameModel
+<link rel="stylesheet" href="~/css/gameCreate.css" asp-append-version="true"/>
+<h1>Add New Game</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="GameName" class="form-label">Game Name</label>
+        <input asp-for="GameName" class="form-control" placeholder="Enter game name" />
+    </div>
+    
+    <div class="form-group">
+        <label for="genreFilter" class="form-label">Filter Genres</label>
+        <input type="text" id="genreFilter" class="form-control" placeholder="Enter genre keyword" />
+
+        <label asp-for="GenreId" class="form-label">Genre</label>
+        <select asp-for="GenreId" id="genreSelect" class="form-control">
+            <!-- JS will populate this <select> with genres -->
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+<div class="d-flex justify-content-center">
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+@section Scripts {
+    <script>
+        const genreFilter = document.getElementById("genreFilter");
+        const genreSelect = document.getElementById("genreSelect");
+
+        function loadGenres(filter) {
+            fetch(`/api/GenresApi?filter=${encodeURIComponent(filter)}`)
+                .then(res => res.ok ? res.json() : Promise.reject(res))
+                .then(data => {
+                    genreSelect.innerHTML = '';
+                    data.forEach(item => {
+                        const option = document.createElement("option");
+                        option.value = item.id;
+                        option.textContent = item.genreName;
+                        genreSelect.appendChild(option);
+                    });
+                })
+                .catch(err => console.error("Error fetching genres:", err));
+        }
+        
+        genreFilter.oninput = () => {
+            loadGenres(genreFilter.value.trim());
+        };
+        
+        document.addEventListener("DOMContentLoaded", () => {
+            loadGenres("");
+        });
+    </script>
+}

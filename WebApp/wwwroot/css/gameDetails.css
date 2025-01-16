@@ -1,0 +1,111 @@
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007BFF;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.table thead {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.table th, .table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.table th {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.table td {
+    font-size: 1rem;
+    color: #555;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table ul {
+    margin: 0;
+    padding-left: 1rem;
+    list-style: disc;
+}
+
+.table .highlight {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+hr {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+div > a {
+    margin-right: 0.5rem;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+div > a:hover {
+    color: #0056b3;
+}
+
+div > a.btn-edit {
+    display: inline-block;
+    background-color: #2868a7;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+div > a.btn-edit:hover {
+    background-color: #007BFF;
+    transform: scale(1.05);
+}

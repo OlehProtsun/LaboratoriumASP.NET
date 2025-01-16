@@ -9,16 +9,52 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2c1e6cc-736e-49f6-8ed1-28de950c5266" name="Changes" comment="" />
+    <list default="true" id="f2c1e6cc-736e-49f6-8ed1-28de950c5266" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WebApp/Controllers/Api/GenresApiController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Controllers/Api/PlatformsApiController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Controllers/Api/PublishersApiController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Controllers/Api/RegionsApiController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Models/Games/GameModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Models/Games/ViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/Models/PagingListAsync.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/wwwroot/css/gameCreate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/wwwroot/css/gameDelete.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/wwwroot/css/gameDetails.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/wwwroot/css/gameEdit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/wwwroot/css/gameIndex.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/wwwroot/css/homeAbout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/wwwroot/css/homeIndex.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/wwwroot/css/homePrivacy.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/wwwroot/css/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Views/Home/About.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Home/About.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Views/Home/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Home/Privacy.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/WebApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/WebApp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/appsettings.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lab6" />
+        <entry key="$PROJECT_DIR$" value="lab7" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,7 +73,8 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/WebApp/Models/ContactModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/oleh.protsun1/RiderProjects/LaboratoriumASP.NET/WebApp/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApp/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApp/appsettings.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -55,9 +92,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.WebApp: http.executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.WebApp: https.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lab7&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Zadanie&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -65,16 +106,9 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;D:\\Users\\oleh.protsun1\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;D:\\Users\\oleh.protsun1\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;D:\\Users\\oleh.protsun1\\AppData\\Local\\Symbols\\src&quot;
-    ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebApp: https">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApp: http">
     <configuration name="WebApp: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebApp/WebApp.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -134,6 +168,10 @@
       <workItem from="1730890788751" duration="669000" />
       <workItem from="1732700748832" duration="353000" />
       <workItem from="1733306346084" duration="1123000" />
+      <workItem from="1736680174084" duration="6307000" />
+      <workItem from="1736770235104" duration="15638000" />
+      <workItem from="1736942219733" duration="10747000" />
+      <workItem from="1737031677742" duration="326000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -208,6 +246,6 @@
     <MESSAGE value="Lab2_Zadanie" />
     <MESSAGE value="lab7(done)" />
     <MESSAGE value="Commit after do" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit after do" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

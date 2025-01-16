@@ -1,0 +1,78 @@
+@model WebApp.Models.Games.GameDetailsViewModel
+
+@{
+    ViewData["Title"] = "Game Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/gameDetails.css" asp-append-version="true"/>
+<h1>Game Details</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Attribute</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="highlight">Game Name</td>
+            <td>@Model.GameName</td>
+        </tr>
+        <tr>
+            <td class="highlight">Genre</td>
+            <td>@Model.GenreName</td>
+        </tr>
+        @foreach (var pub in Model.Publishers)
+        {
+            <tr>
+                <td class="highlight">Publisher</td>
+                <td>@pub.PublisherName</td>
+            </tr>
+            @if (pub.Platforms.Any())
+            {
+                @foreach (var platform in pub.Platforms)
+                {
+                    <tr>
+                        <td class="highlight">Platform</td>
+                        <td>@platform.PlatformName</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight">Release Year</td>
+                        <td>@platform.ReleaseYear</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight">Region Sales</td>
+                        <td>
+                            @if (platform.RegionSales.Any())
+                            {
+                                <ul>
+                                    @foreach (var rs in platform.RegionSales)
+                                    {
+                                        <li>@rs.RegionName: @rs.NumSales</li>
+                                    }
+                                </ul>
+                            }
+                            else
+                            {
+                                <span>No region sales data</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td class="highlight">Platforms</td>
+                    <td>No platforms for this publisher</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<div class="d-flex justify-content-center">
+    <a asp-action="Edit" asp-route-id="@Model.GameId" class="btn-edit">Edit</a>
+</div>
+    <a asp-action="Index">Back to List</a>

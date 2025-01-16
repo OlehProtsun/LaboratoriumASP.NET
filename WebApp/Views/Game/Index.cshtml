@@ -1,0 +1,121 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model PagingListAsync<WebApp.Models.Games.Game>
+
+@{
+    ViewData["Title"] = "Games List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    CancellationToken token = CancellationToken.None;
+}
+<link rel="stylesheet" href="~/css/gameIndex.css" asp-append-version="true" />
+<div class="container text-center">
+    <header class="page-header">
+        <h1>Games List</h1>
+        <div class="d-flex justify-content-center">
+        <button class="btn primary" onclick="location.href='@Url.Action("Create")'">+ Create New</button>
+        </div>
+    </header>
+    <table class="table minimalist">
+        <thead>
+        <tr>
+            <th class="text-center">@Html.DisplayNameFor(model => model.Data.GetAsyncEnumerator(token).Current.GameName)</th>
+            <th class="text-center">@Html.DisplayNameFor(model => model.Data.GetAsyncEnumerator(token).Current.Genre)</th>
+            <th class="text-center">@Html.DisplayNameFor(model => model.Data.GetAsyncEnumerator(token).Current.GamePublishers)</th>
+            <th class="text-center">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @await foreach (var item in Model.Data)
+        {
+            <tr>
+                <td class="text-center">@Html.DisplayFor(modelItem => item.GameName)</td>
+                <td class="text-center">@(item.Genre?.GenreName ?? "No Genre")</td>
+                <td class="text-center">
+                    @if (item.GamePublishers.Any())
+                    {
+                        <ul class="publisher-list">
+                            @foreach (var publisher in item.GamePublishers)
+                            {
+                                <li>
+                                    <a class="publisher-link" asp-action="Details" asp-route-id="@item.Id">
+                                        @publisher.Publisher?.PublisherName
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <span>No Publishers</span>
+                    }
+                </td>
+                <td class="text-center">
+                    <div class="action-buttons-row">
+                        <button class="btn action-btn" onclick="location.href='@Url.Action("Edit", new { id = item.Id })'">
+                            <i class="icon-edit"></i> Edit
+                        </button>
+                        <button class="btn action-btn" onclick="location.href='@Url.Action("Details", new { id = item.Id })'">
+                            <i class="icon-details"></i> Details
+                        </button>
+                        <button class="btn action-btn delete" onclick="location.href='@Url.Action("Delete", new { id = item.Id })'">
+                            <i class="icon-delete"></i> Delete
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" class="text-center"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <nav class="pagination-container text-center" aria-label="Page navigation">
+        <ul class="pagination">
+            @if (!Model.IsFirst)
+            {
+                <li><button class="btn pagination-btn" onclick="location.href='@Url.Action("Index", new { page = 1, size = Model.Size })'">First</button></li>
+            }
+            @if (Model.IsPrevious)
+            {
+                <li><button class="btn pagination-btn" onclick="location.href='@Url.Action("Index", new { page = Model.Page - 1, size = Model.Size })'">Prev</button></li>
+            }
+            @if (Model.Page > 2)
+            {
+                <li><button class="btn pagination-btn" onclick="location.href='@Url.Action("Index", new { page = 1, size = Model.Size })'">1</button></li>
+                @if (Model.Page > 3)
+                {
+                    <li><span class="btn pagination-btn disabled">...</span></li>
+                }
+            }
+            @for (int i = Math.Max(1, Model.Page - 2); i <= Math.Min(Model.TotalPages, Model.Page + 2); i++)
+            {
+                if (i == Model.Page)
+                {
+                    <li class="active"><span class="btn pagination-btn active">@i</span></li>
+                }
+                else
+                {
+                    <li><button class="btn pagination-btn" onclick="location.href='@Url.Action("Index", new { page = i, size = Model.Size })'">@i</button></li>
+                }
+            }
+            @if (Model.Page < Model.TotalPages - 2)
+            {
+                @if (Model.Page < Model.TotalPages - 3)
+                {
+                    <li><span class="btn pagination-btn disabled">...</span></li>
+                }
+                <li><button class="btn pagination-btn" onclick="location.href='@Url.Action("Index", new { page = Model.TotalPages, size = Model.Size })'">@Model.TotalPages</button></li>
+            }
+            @if (Model.IsNext)
+            {
+                <li><button class="btn pagination-btn" onclick="location.href='@Url.Action("Index", new { page = Model.Page + 1, size = Model.Size })'">Next</button></li>
+            }
+            @if (!Model.IsLast)
+            {
+                <li><button class="btn pagination-btn" onclick="location.href='@Url.Action("Index", new { page = Model.TotalPages, size = Model.Size })'">Last</button></li>
+            }
+        </ul>
+    </nav>
+</div>

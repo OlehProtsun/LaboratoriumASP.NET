@@ -1,0 +1,106 @@
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn.action-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+}
+
+.btn.action-btn i {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.btn.delete {
+    background-color: #dc3545;
+}
+
+.btn.delete:hover {
+    background-color: #c82333;
+}
+
+.btn.pagination-btn {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+}
+
+.btn.pagination-btn.active {
+    background-color: #6c757d;
+    color: #fff;
+    cursor: default;
+}
+
+.btn.pagination-btn.disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+.publisher-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.publisher-link:hover {
+    text-decoration: underline;
+}
+
+.table.minimalist {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table.minimalist th, .table.minimalist td {
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table.minimalist th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.table.minimalist tfoot td {
+    border-top: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.action-buttons-row {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.publisher-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination-container {
+    margin-top: 1rem;
+}
